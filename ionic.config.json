@@ -1,0 +1,7 @@
+{
+  "name": "demo-cap-plugin-mock-vue",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
