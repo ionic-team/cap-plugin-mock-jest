@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "serve": "vue-cli-service serve",
+    "test:dev": "vue-cli-service test:unit --watch",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "@capacitor/app": "1.0.2",
@@ -15,6 +16,8 @@
     "@capacitor/haptics": "1.0.2",
     "@capacitor/keyboard": "1.0.2",
     "@capacitor/status-bar": "1.0.2",
+    "@capacitor/storage": "~1.0.3",
+    "@capacitor/toast": "~1.0.2",
     "@ionic/vue": "^5.4.0",
     "@ionic/vue-router": "^5.4.0",
     "core-js": "^3.6.5",
