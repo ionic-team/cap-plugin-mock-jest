@@ -63,7 +63,7 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/vue";
-import { defineComponent, ref, capitalize } from "vue";
+import { defineComponent, ref } from "vue";
 import { Storage } from "@capacitor/storage";
 import { Toast } from "@capacitor/toast";
 

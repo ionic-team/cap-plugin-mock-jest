@@ -18,15 +18,17 @@ describe("Home.vue", () => {
   });
 
   it("gets the first and last name", async () => {
-    Storage.get = jest.fn().mockImplementation(
-      async (data: { key: string }): Promise<{ value: string }> => {
-        return data.key === "firstName"
-          ? { value: "Jimmy" }
-          : data.key === "lastName"
-          ? { value: "Simms" }
-          : { value: "unknown" };
-      }
-    );
+    Storage.get = jest
+      .fn()
+      .mockImplementation(
+        async (data: { key: string }): Promise<{ value: string }> => {
+          return data.key === "firstName"
+            ? { value: "Jimmy" }
+            : data.key === "lastName"
+            ? { value: "Simms" }
+            : { value: "unknown" };
+        }
+      );
     const w = mount(Home);
     await flushPromises();
     expect(w.vm.firstName).toEqual("Jimmy");
